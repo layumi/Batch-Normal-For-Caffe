@@ -1,5 +1,5 @@
 clear;
-addpath ./matlab; %include matcaffe
+addpath ./matlab;
 model = './deploy.prototxt';%include your own prototxt
 caffe.set_mode_cpu();
 net = caffe.Net(model,'test');
